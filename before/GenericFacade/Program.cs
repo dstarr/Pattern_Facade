@@ -7,16 +7,17 @@ namespace GenericFacade
     {
         static void Main(string[] args)
         {
-            var serviceA = new ServiceA();
-            serviceA.Method1();
+            ServiceA serviceA = new ServiceA();
+            int sAResult = serviceA.Method2();
             
-            var serviceB = new ServiceB();
-            string serviceBString = serviceB.Method2();
+            ServiceB serviceB = new ServiceB();
+            string sBResult = serviceB.Method2();
             
-            var serviceC = new ServiceC();
-            string serviceCString = serviceC.Method2();
+            ServiceC serviceC = new ServiceC();
+            double sCResult = serviceC.Method1();
             
-            Console.WriteLine($"{serviceBString} - {serviceCString}");
+            Console.WriteLine(sAResult + " - " + sCResult + " - " + sBResult);
+            
         }
     }
 }
