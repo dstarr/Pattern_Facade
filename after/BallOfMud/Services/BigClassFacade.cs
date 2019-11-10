@@ -10,14 +10,14 @@ namespace BallOfMud.Services
             _bigClass.SetValueI(0);
         }
 
-        public void Incrememnt()
+        public void IncreaseBy(int numberToAdd)
         {
-            _bigClass.IncrementI();
+            _bigClass.AddToI(numberToAdd);
         }
 
-        public void Decrement()
+        public void DecreaseBy(int numberToSubtract)
         {
-            _bigClass.DecrememntI();
+            _bigClass.AddToI(-numberToSubtract);
         }
 
         public int GetCurrentValue()

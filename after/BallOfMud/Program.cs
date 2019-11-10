@@ -9,10 +9,8 @@ namespace BallOfMud
         {
             BigClassFacade bigClass = new BigClassFacade();
             
-            bigClass.Incrememnt();
-            bigClass.Incrememnt();
-            bigClass.Incrememnt();
-            bigClass.Decrement();
+            bigClass.IncreaseBy(50);
+            bigClass.DecreaseBy(20);
             
             Console.WriteLine($"Final Number : {bigClass.GetCurrentValue()}");
         }
