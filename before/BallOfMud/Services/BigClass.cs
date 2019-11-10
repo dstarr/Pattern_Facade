@@ -13,7 +13,6 @@ namespace BallOfMud.Services
 
         public string GetValueB()
         {
-            // some work
             return "Ball of Mud";
         }
 
@@ -29,7 +28,6 @@ namespace BallOfMud.Services
 
         public void DoSomething()
         {
-            // decrement _i
             _i--;
         }
 
@@ -47,10 +45,11 @@ namespace BallOfMud.Services
         public void AddedThisMethodLater()
         {
             // calls a db for a number
+            
             int theNumber = 12;
             _i += theNumber;
         }
-        
+
         public void DecrememntI()
         {
             _i--;

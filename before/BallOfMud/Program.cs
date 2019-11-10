@@ -10,6 +10,7 @@ namespace BallOfMud
             BigClass bigClass = new BigClass();
             
             bigClass.SetValueI(3);
+            
             bigClass.IncrementI();
             bigClass.IncrementI();
             bigClass.IncrementI();
