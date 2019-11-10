@@ -17,7 +17,7 @@ namespace BallOfMud.Services
             return "Ball of Mud";
         }
 
-        public void SetValue(int i)
+        public void SetValueI(int i)
         {
             _i = i;
         }
@@ -51,7 +51,7 @@ namespace BallOfMud.Services
             _i += theNumber;
         }
         
-        public void Decrememnt()
+        public void DecrememntI()
         {
             _i--;
         }

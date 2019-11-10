@@ -9,12 +9,12 @@ namespace BallOfMud
         {
             BigClass bigClass = new BigClass();
             
-            bigClass.SetValue(3);
+            bigClass.SetValueI(3);
             bigClass.IncrementI();
             bigClass.IncrementI();
             bigClass.IncrementI();
             
-            bigClass.Decrememnt();
+            bigClass.DecrememntI();
 
             Console.WriteLine($"Final Number : {bigClass.GetValueA()}");
         }
