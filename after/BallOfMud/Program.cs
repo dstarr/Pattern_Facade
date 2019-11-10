@@ -7,16 +7,14 @@ namespace BallOfMud
     {
         static void Main(string[] args)
         {
-            BigClass bigClass = new BigClass();
+            BigClassFacade bigClass = new BigClassFacade();
             
-            bigClass.SetValueI(3);
-            bigClass.IncrementI();
-            bigClass.IncrementI();
-            bigClass.IncrementI();
+            bigClass.Incrememnt();
+            bigClass.Incrememnt();
+            bigClass.Incrememnt();
+            bigClass.Decrement();
             
-            bigClass.DecrememntI();
-
-            Console.WriteLine($"Final Number : {bigClass.GetValueB()}");
+            Console.WriteLine($"Final Number : {bigClass.GetCurrentValue()}");
         }
     }
 }
