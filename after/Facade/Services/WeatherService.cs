@@ -10,12 +10,5 @@ namespace Facade.Services
             
             return 53;
         }
-
-        public int GetTempCelcius(City city, State state)
-        {
-            // call to service or db would go here
-            
-            return 11;
-        }
     }
 }
