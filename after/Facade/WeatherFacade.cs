@@ -9,6 +9,12 @@ namespace Facade
         private readonly GeoLookupService _geoLookUpService;
         private readonly WeatherService _weatherService;
 
+        public WeatherFacade() : 
+            this(new ConverterService(), new GeoLookupService(), new WeatherService())
+        {
+            
+        }
+        
         public WeatherFacade(ConverterService converterService,
                                 GeoLookupService geoLookUpService,
                                 WeatherService weatherService)
@@ -23,7 +29,7 @@ namespace Facade
             City city = _geoLookUpService.GetCityForZipCode(zipCode);
             State state = _geoLookUpService.GetStateForZipCode(zipCode);
             int tempF = _weatherService.GetTempFahrenheit(city, state);
-            int tempC = _weatherService.GetTempCelcius(city, state);
+            int tempC = _converterService.ConvertFahrenheitToCelsius(tempF);
 
             var results = new WeatherFacadeResults
             {
